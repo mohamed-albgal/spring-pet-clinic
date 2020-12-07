@@ -1,4 +1,4 @@
-package dev.malb.springpetclinic;
+package petclinic_web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

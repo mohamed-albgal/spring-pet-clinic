@@ -1,5 +1,4 @@
-package dev.malb.springpetclinic.model;
-
+package dev.malb.petclinic_data.model;
 public class Person {
 
     private String firstName;
