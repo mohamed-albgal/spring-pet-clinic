@@ -37,7 +37,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-<!--            maven release helps get artifacts from SCM (?)00-->
+<!--            maven release helps get artifacts from SCM (?)-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
