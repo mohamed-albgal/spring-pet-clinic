@@ -5,9 +5,6 @@ import dev.malb.petclinic_data.model.Vet;
 
 import java.util.Set;
 
-public interface VetService {
-
-    Vet findById(Long id);
-    Vet save(Vet vet);
-    Set<Vet> findAll();
+public interface VetService extends DataService<Vet,Long> {
+    Vet findByLastName(String lastName);
 }

@@ -4,9 +4,6 @@ import dev.malb.petclinic_data.model.Owner;
 
 import java.util.Set;
 
-public interface OwnerService {
+public interface OwnerService extends DataService<Owner, Long> {
     Owner findByByLastName(String lastName);
-    Owner findById(Long id);
-    Owner save(Owner owner);
-    Set<Owner> findAll();
 }

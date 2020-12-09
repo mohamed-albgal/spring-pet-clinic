@@ -5,10 +5,6 @@ import dev.malb.petclinic_data.model.Pet;
 
 import java.util.Set;
 
-public interface PetService {
-    Owner findById(Long id);
+public interface PetService extends DataService<Pet,Long>{
 
-    Pet save(Owner pet);
-
-    Set<Pet> findAll();
 }
