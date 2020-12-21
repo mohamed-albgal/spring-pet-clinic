@@ -2,11 +2,12 @@ package dev.malb.petclinic_data.services.map;
 
 import dev.malb.petclinic_data.model.Vet;
 import dev.malb.petclinic_data.services.DataService;
+import dev.malb.petclinic_data.services.VetService;
 
 import java.util.Set;
 
 
-public class VetMapService extends AbstractMapService<Vet,Long> implements DataService<Vet,Long> {
+public class VetMapService extends AbstractMapService<Vet,Long> implements VetService {
     @Override
     public Vet findById(Long id) {
         return super.findById(id);
@@ -31,4 +32,6 @@ public class VetMapService extends AbstractMapService<Vet,Long> implements DataS
     public Vet save(Vet object) {
         return super.save(object.getId(),object);
     }
+
+
 }

@@ -3,10 +3,11 @@ package dev.malb.petclinic_data.services.map;
 import dev.malb.petclinic_data.model.Owner;
 import dev.malb.petclinic_data.model.Pet;
 import dev.malb.petclinic_data.services.DataService;
+import dev.malb.petclinic_data.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet,Long> implements DataService<Pet,Long> {
+public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Pet findById(Long id) {
         return (Pet) super.findById(id);

@@ -6,5 +6,5 @@ import dev.malb.petclinic_data.model.Vet;
 import java.util.Set;
 
 public interface VetService extends DataService<Vet,Long> {
-    Vet findByLastName(String lastName);
+
 }
