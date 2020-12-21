@@ -3,10 +3,13 @@ package dev.malb.petclinic_data.services.map;
 import dev.malb.petclinic_data.model.Vet;
 import dev.malb.petclinic_data.services.DataService;
 import dev.malb.petclinic_data.services.VetService;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-
+@ComponentScan
+@Service
 public class VetMapService extends AbstractMapService<Vet,Long> implements VetService {
     @Override
     public Vet findById(Long id) {

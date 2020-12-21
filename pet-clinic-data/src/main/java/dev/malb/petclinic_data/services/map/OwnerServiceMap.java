@@ -3,9 +3,13 @@ package dev.malb.petclinic_data.services.map;
 import dev.malb.petclinic_data.model.Owner;
 import dev.malb.petclinic_data.services.DataService;
 import dev.malb.petclinic_data.services.OwnerService;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@ComponentScan
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 

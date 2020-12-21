@@ -8,17 +8,19 @@ import dev.malb.petclinic_data.services.map.OwnerServiceMap;
 import dev.malb.petclinic_data.services.map.VetMapService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    private final OwnerService ownerService;
     private final VetService vetService;
+    private final OwnerService ownerService;
 
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetMapService();
+    @Autowired
+    public DataLoader(VetService vetService, OwnerService ownerService) {
+        this.vetService = vetService;
+        this.ownerService = ownerService;
     }
 
     @Override
